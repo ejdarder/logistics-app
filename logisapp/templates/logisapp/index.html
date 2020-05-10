@@ -1,0 +1,12 @@
+{% extends 'logisapp/base.html' %}
+
+{% block content %}
+	{% for part in recently_added_parts %}
+		<div class="part">
+			<p> P/N: <a href="{% url 'detail part' pk=part.pk %}">{{ part.part_number }}</a> // Supplier: {{ part.part_supplier }}</p>
+		</div>
+		<div class="stock">
+			<p>Stock: {{ part.part_stock }}</p>
+		</div>
+	{% endfor %}
+{% endblock %}

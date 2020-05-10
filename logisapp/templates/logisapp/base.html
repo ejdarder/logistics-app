@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+	<head>
+		<title>Logistics App</title>
+		<link rel="stylesheet" href="{% static 'css/logisapp.css' %}">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Jost&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="page-header">
+			<h2><a href="/">Logistics App</a></h2>
+		</div>
+		<div class="part">
+			<div class="stock">
+			{% block content %}
+			{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

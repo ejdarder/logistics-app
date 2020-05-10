@@ -1,0 +1,14 @@
+{% extends 'logisapp/base.html' %}
+
+{% block content %}
+	<div class="part">
+		<h3><u>P/N</u>: {{ part.part_number}}</h3>
+
+			<p><u>Description</u>: {{ part.part_description }}</p>
+			<p><u>Supplier</u>: {{ part.part_supplier }}</p>
+			<p><u>Added</u>: {{ part.add_date }}</p>
+	</div>
+	<div class="stock">
+		<p>Stock: {{ part.part_stock }}</p>
+	</div>
+{% endblock %}
